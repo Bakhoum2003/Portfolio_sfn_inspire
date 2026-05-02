@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFN INSPIRE — Vidéaste Cinématique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@200;300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="media/images/logo1.jpeg">
+<link rel="stylesheet" href="CSS/styles.css">
+
+
+
+</head>
+<body>
+
+<!-- ── LOADER ─────────────────────────────────────────────── -->
+
+<div id="loader">
+  <div class="loader-logo"><span>SFN · Inspire</span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ── CURSOR ─────────────────────────────────────────────── -->
+
+<div id="cursor">
+  <div class="c-dot"  id="cDot"></div>
+  <div class="c-ring" id="cRing"></div>
+  <div class="c-label" id="cLabel"></div>
+</div>
+
+<!-- ── NAVIGATION ─────────────────────────────────────────── -->
+
+<nav id="nav">
+  <a href="#hero" class="nav-brand">
+    <!-- <img src="media/images/logo1.jpeg" alt="SFN Inspire Logo" class="nav-brand-logo"> -->
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">SFN Inspire</span>
+      <span class="nav-brand-sub">Vidéaste &amp; Réalisateur</span>
+    </div>
+  </a>
+
+  <div class="nav-center">
+    <a href="#showreel">Showreel</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projets</a>
+    <a href="#about">À propos</a>
+  </div>
+
+  <div class="nav-cta-wrap">
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+
+  <div class="nav-burger" id="navBurger">
+    <span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+
+<nav class="nav-mobile" id="navMobile">
+  <a href="#showreel" onclick="closeMobile()">Showreel</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#projects" onclick="closeMobile()">Projets</a>
+  <a href="#about"    onclick="closeMobile()">À propos</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+
+<section id="hero">
+  <div class="hero-bg"> 
+
+  
+    
+        <!-- VIDÉO HERO — en background   -->
+      <video id="hero-video" autoplay muted loop  
+        playsinline src="media/videos/BacVideo(1).mp4">        
+      </video>   
+     
+  </div>
+    
+ 
+
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Cinéma &nbsp;·&nbsp; Émotion &nbsp;·&nbsp; Impact</p>
+
+
+<h1 class="hero-title" aria-label="SFN Inspire">
+  <span class="hero-title-line">SFN</span>
+  <span class="hero-title-line">Inspire</span>
+</h1>
+
+<div class="hero-rule"></div>
+
+<p class="hero-subtitle">
+  Je crée des images qui captivent<br>et convertissent.
+</p>
+
+<div class="hero-actions">
+  <a href="#projects" class="btn-gold">
+    <span>Voir mon travail</span>
+    <span class="btn-arrow"></span>
+  </a>
+  <a href="#contact" class="btn-ghost">
+    Me contacter
+    <span class="btn-arrow"></span>
+  </a>
+</div>
+
+
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-track"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MARQUEE
+   ════════════════════════════════════════════════════════════ -->
+
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    <!-- items duplicated in JS -->
+    <span class="marquee-item"><span class="marquee-dot"></span> Réalisation vidéo</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Montage cinématique</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Color grading</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Contenu social</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Direction artistique</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Post-production</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Réalisation vidéo</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Montage cinématique</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Color grading</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Contenu social</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Direction artistique</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Post-production</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SHOWREEL
+════════════════════════════════════════════════════════════ -->
+
+<section id="showreel">
+  <div class="showreel-inner">
+    <div class="showreel-head">
+      <div>
+        <p class="eyebrow" data-reveal data-delay="1">
+          Showreel <span class="eyebrow-num">/ 2024</span>
+        </p>
+        <h2 class="section-title" data-reveal data-delay="2">
+          L'art du<br><em>mouvement</em>
+        </h2>
+      </div>
+      <p class="showreel-desc" data-reveal="right" data-delay="3">
+        Chaque frame est une décision.<br>
+        Chaque coupe, une intention.
+      </p>
+    </div>
+
+
+<div class="video-stage" data-reveal="scale" data-delay="1">
+  <div class="video-corner-br"></div>
+      <!-- Integrer en JS -->
+  <div class="video-placeholder">
+    <div class="play-circle" id="playBtn">
+      <div class="play-icon"></div>
+    </div>
+    <p class="play-label">Voir mes realisations</p>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════════════ -->
+
+<section id="services">
+  <div class="services-layout">
+    <div class="services-intro">
+      <div>
+        <p class="eyebrow" data-reveal data-delay="1">
+          Expertise <span class="eyebrow-num">/ 04</span>
+        </p>
+        <h2 class="section-title" data-reveal data-delay="2">
+          Ce que je<br><em>maîtrise</em>
+        </h2>
+      </div>
+      <p class="services-note" data-reveal="right" data-delay="2">
+        De la conception à la livraison finale, chaque service est rendu avec une exigence cinématique absolue.
+      </p>
+    </div>
+
+
+<div class="services-list">
+  <div class="service-item" data-reveal data-delay="1">
+    <p class="service-item-num">01 — Mise en images</p>
+    <h3 class="service-item-name">Réalisation<br><em>vidéo</em></h3>
+    <p class="service-item-desc">Films corporate, clips musicaux, documentaires — une vision narrative unique pour chaque projet.</p>
+    <div class="service-item-arrow">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="service-item" data-reveal data-delay="2">
+    <p class="service-item-num">02 — Rythme &amp; émotion</p>
+    <h3 class="service-item-name">Montage<br><em>cinématique</em></h3>
+    <p class="service-item-desc">Le montage comme langage : rythme, tempo, impact. Chaque coupe raconte quelque chose.</p>
+    <div class="service-item-arrow">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="service-item" data-reveal data-delay="3">
+    <p class="service-item-num">03 — Digital &amp; viral</p>
+    <h3 class="service-item-name">Contenu<br><em>réseaux sociaux</em></h3>
+    <p class="service-item-desc">Reels, stories, formats courts — conçus pour capter l'attention dans les 3 premières secondes.</p>
+    <div class="service-item-arrow">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="service-item" data-reveal data-delay="4">
+    <p class="service-item-num">04 — Science des couleurs</p>
+    <h3 class="service-item-name">Color<br><em>grading</em></h3>
+    <p class="service-item-desc">L'identité visuelle de votre marque révélée par une colorimétrie signature et irréprochable.</p>
+    <div class="service-item-arrow">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJETS
+    ════════════════════════════════════════════════════════════ -->
+
+<section id="projects">
+  <div class="projects-layout">
+    <div class="projects-meta">
+      <div>
+        <p class="eyebrow" data-reveal data-delay="1">
+          Portfolio <span class="eyebrow-num">/ 04 projets</span>
+        </p>
+        <h2 class="section-title" data-reveal data-delay="2">
+          Travaux <em>récents</em>
+        </h2>
+      </div>
+      <p class="projects-count" data-reveal="fade" data-delay="3">Sélection 2023–2024</p>
+    </div>
+
+
+<div class="projects-grid">
+ 
+  <div class="proj proj-bg-1" data-reveal data-delay="1">
+    <img class="proj-img" src="media/images/SamaBoutik.PNG" alt="SAMA BOUTIK">
+    <p class="proj-index">01</p>
+    <div class="proj-overlay">
+      <p class="proj-tag">Site web pour vendre</p>
+      <h3 class="proj-name">SAMA BOUTIK</h3>
+    </div>
+    <div class="proj-corner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="proj proj-bg-2" data-reveal data-delay="2">
+    <img class="proj-img" src="media/images/VivreAuSN.PNG" alt="VIVRE AU SN">
+    <p class="proj-index">02</p>
+    <div class="proj-overlay">
+      <p class="proj-tag">Promovoir le tourisme au sénégal</p>
+      <h3 class="proj-name">VIVRE AU SN</h3>
+    </div>
+    <div class="proj-corner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="proj proj-bg-3" data-reveal data-delay="3">
+   <img class="proj-img" src="media/images/jojdakar.PNG" alt="JOJ DAKAR 2026">
+    <p class="proj-index">03</p>
+    <div class="proj-overlay">
+      <p class="proj-tag">En partenaire avec le fidak 33</p>
+      <h3 class="proj-name">Joj Dakar 2026</h3>
+    </div>
+    <div class="proj-corner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+  <div class="proj proj-bg-4" data-reveal data-delay="4">
+    <img class="proj-img" src="media/images/Fidak.PNG" alt="FIDAK 33">
+    <p class="proj-index">04</p>
+    <div class="proj-overlay">
+      <p class="proj-tag">foire internationale de dakar 2025</p>
+      <h3 class="proj-name">FIDAK 33</h3>
+    </div>
+    <div class="proj-corner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+     ════════════════════════════════════════════════════════════ -->
+
+<section id="about">
+  <div class="about-layout">
+    <div class="about-visual" data-reveal="left">
+      <div class="about-frame">
+        
+         
+            <!-- PHOTO PROFIL : -->
+
+           <img src="media/images/photoFallou.jpeg" alt="SFN Inspire"  
+              style="width:100%;height:100%;        
+              object-fit:cover;">                   
+          
+       
+        <div class="about-frame-inner">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about-accent-sq"></div>
+    </div>
+
+
+<div class="about-text">
+  <p class="eyebrow" data-reveal data-delay="1">
+    À propos <span class="eyebrow-num">/ SFN Inspire</span>
+  </p>
+  <h2 class="about-lead" data-reveal data-delay="2">
+    Derrière l'objectif,<br>une <em>vision</em>
+  </h2>
+  <div class="about-divider" data-reveal="fade" data-delay="3"></div>
+  <p class="about-body" data-reveal data-delay="3">
+    Je suis SFN Inspire, vidéaste et réalisateur passionné par l'art de raconter des histoires à travers l'image. Mon approche cinématique transcende le simple enregistrement pour créer des œuvres visuelles qui résonnent profondément avec votre audience.
+  </p>
+  <p class="about-body" data-reveal data-delay="4">
+    Chaque projet est une nouvelle opportunité de repousser les limites créatives — de la prise de vue à la post-production, je m'engage pour un rendu qui amplifie l'identité de votre marque et dépasse vos attentes.
+  </p>
+  <p class="about-sig" data-reveal data-delay="5">SFN Inspire</p>
+</div>
+
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VISION
+     ════════════════════════════════════════════════════════════ -->
+
+<section id="vision">
+  <div class="vision-quote-wrap">
+    <span class="vision-mark" aria-hidden="true">"</span>
+    <blockquote class="vision-statement" data-reveal="scale">
+      Je ne fais pas des vidéos.<br>
+      Je crée des <span class="gold">émotions</span><br>
+      qui <em>vendent.</em>
+    </blockquote>
+    <p class="vision-author" data-reveal="fade" data-delay="3">SFN Inspire</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     RÉSULTATS
+    ════════════════════════════════════════════════════════════ -->
+
+<section id="results">
+  <div class="results-grid">
+    <div class="result-cell" data-reveal data-delay="1">
+      <p class="result-number">
+        <span class="plus">+</span>3<span class="unit">M</span>
+      </p>
+      <p class="result-label">Vues générées</p>
+    </div>
+    <div class="result-cell" data-reveal data-delay="2">
+      <p class="result-number">
+        <span class="plus">+</span>10
+      </p>
+      <p class="result-label">Projets réalisés</p>
+    </div>
+    <div class="result-cell" data-reveal data-delay="3">
+      <p class="result-number">
+        <span class="plus">+</span>8
+      </p>
+      <p class="result-label">Clients satisfaits</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+  ════════════════════════════════════════════════════════════ -->
+
+<section id="contact">
+  <div class="contact-layout">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow" data-reveal data-delay="1">
+          Contact <span class="eyebrow-num">/ Démarrons</span>
+        </p>
+        <h2 class="contact-lead" data-reveal data-delay="2">
+          Parlons de votre<br><em>prochain projet</em>
+        </h2>
+        <p class="contact-note" data-reveal data-delay="3">
+          Chaque grande collaboration commence par une conversation. Je réponds sous 24h, avec soin et attention.
+        </p>
+
+        <!-- Localisation  -->
+         
+        <div class="contact-map" data-reveal="scale" data-delay="4">
+          <p class="eyebrow">Localisation</p>
+          <h3 class="map-title">Parcelle unité 09 — Face pharmacie Seydina Muhammad, Dakar</h3>
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps?q=Pharmacie+Seydina+Muhammad+Dakar+Senegal&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+   
+  <div class="contact-channels" data-reveal="right" data-delay="2">
+   
+    <!-- Les reaseaux sociaux -->
+
+    <a href="https://wa.me/786316709" class="channel-link" target="_blank" rel="noopener" data-cursor="WhatsApp">
+      <div class="channel-left">
+        <div class="channel-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--paper-30)">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+        </div>
+        <span class="channel-name">WhatsApp</span>
+      </div>
+      <span class="channel-handle">Écrire un message</span>
+    </a>
+
+    <a href="https://instagram.com/sfn_inspire" class="channel-link" target="_blank" rel="noopener" data-cursor="Instagram">
+      <div class="channel-left">
+        <div class="channel-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--paper-30)">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </div>
+        <span class="channel-name">Instagram</span>
+      </div>
+      <span class="channel-handle">sfn_inspire</span>
+    </a>
+
+    <a href="https://tiktok.com/@sfn_inspire" class="channel-link" target="_blank" rel="noopener" data-cursor="TikTok">
+      <div class="channel-left">
+        <div class="channel-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--paper-30)">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.9 2.9 0 0 1 5.1-1.81v-3.03a6.35 6.35 0 0 0-5.1 2.45v-4.26a6.35 6.35 0 0 0 6.35 6.35v-3.03a2.89 2.89 0 0 1 2.54-2.87V6.69z"/>
+          </svg>
+        </div>
+        <span class="channel-name">TikTok</span>
+      </div>
+      <span class="channel-handle">sfn_inspire</span>
+    </a>
+
+    <a href="mailto:sfninspire@gmail.com" class="channel-link" data-cursor="Email">
+      <div class="channel-left">
+        <div class="channel-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" style="color:var(--paper-30)">
+            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <span class="channel-name">Email</span>
+      </div>
+      <span class="channel-handle">Ecrivez-moi sur mail</span>
+    </a>
+  </div>
+</div>
+
+<div class="footer-bar">
+  <p class="footer-copy">© 2024 SFN Inspire — Tous droits réservés  — Conçue par <span>BAKHOUM_DEV</span></p>
+  <div class="footer-links">
+    <a href="#">Mentions légales</a>
+    <a href="#">Politique de confidentialité</a>
+    <a href="#hero">Haut de page ↑</a>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+     
+   
+
+
+<script src="JS/scripts.js"></script>
+
+</body>
+</html>
